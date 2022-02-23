@@ -47,7 +47,8 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Timer(Duration(seconds: 1), () => {store.Start(), setState(() {})});
+          store.Start();
+          setState(() {});
         },
         child: Icon(Icons.add),
       ),

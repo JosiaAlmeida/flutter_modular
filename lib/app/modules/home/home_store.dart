@@ -22,7 +22,7 @@ class HomeStore extends NotifierStore<Exception, HomeModel> {
 
   Future<void> Start() async {
     setLoading(true);
-    await Future.delayed(Duration(seconds: 1));
+    // await Future.delayed(Duration(seconds: 1));
     state.segundos++;
     update(state);
     setLoading(false);
